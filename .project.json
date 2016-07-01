@@ -12,7 +12,8 @@
     "excludedFiles": [
       "test.html"
     ],
-    "buildRequired": true
+    "buildRequired": false,
+    "lastBuildDateTime": "Fri, 01 Jul 2016 13:41:04 GMT"
   },
   "dataBinding": {
     "/webapp/view/App.view.xml": {
@@ -63,5 +64,10 @@
     "notifyBeforePushLevel": "Error",
     "blockPush": false,
     "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "a5a504e08",
+    "name": "xsauthlevelpocpublicui",
+    "lastVersionWeTriedToDeploy": "0.0.1"
   }
 }
