@@ -112,6 +112,13 @@
 					"target": [
 						"object"
 					]
+				},
+				{
+					"pattern": "VoucherCode",
+					"name": "vouchercode",
+					"target": [
+						"vouchercode"
+					]
 				}
 			],
 			"targets": {
@@ -119,6 +126,11 @@
 					"viewName": "Worklist",
 					"viewId": "worklist",
 					"viewLevel": 1
+				},
+				"vouchercode": {
+					"viewName": "VoucherCode",
+					"viewId": "vouchercode",
+					"viewLevel": 2
 				},
 				"object": {
 					"viewName": "Object",

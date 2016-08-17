@@ -7,8 +7,18 @@
 	<semantic:FullscreenPage
 		id="page"
 		navButtonPress="onNavBack"
-		showNavButton="true"
+		showNavButton="false"
 		title="{i18n>worklistViewTitle}">
+
+		<semantic:customHeaderContent>
+			<Button 
+				id="voucherCode"
+				icon="sap-icon://bar-code" 
+				tooltip="{i18n>worklistVoucherCodeTooltip}"
+				text="{i18n>worklistVoucherCodeTooltip}"
+				press="onVoucherCode"/>
+		</semantic:customHeaderContent>
+		
 		<semantic:content>
 			<Table
 				id="table"

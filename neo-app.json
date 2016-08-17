@@ -40,7 +40,7 @@
       "path": "/destinations/HANAMDC",
       "target": {
         "type": "destination",
-        "name": "HANAMDC"
+        "name": "HXE"
       },
       "description": "HANA MDC XS"
     }

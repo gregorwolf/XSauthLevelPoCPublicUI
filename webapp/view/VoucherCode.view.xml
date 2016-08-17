@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="de.linuxdozent.gittest.publicui.controller.VoucherCode"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic">
+
+	<semantic:FullscreenPage
+		id="page"
+		navButtonPress="onNavBack"
+		showNavButton="true"
+		title="{i18n>VoucherCodeTitle}"
+		busy="false">
+
+		<semantic:content>
+			<List
+				items="{
+					path: '/DiscountCode'
+				}">
+				<StandardListItem
+					title="{UserName}"
+					counter="{DiscountValue}"
+					description="{SHA256HASH}" />
+			</List>
+ 		</semantic:content>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+
+
+	</semantic:FullscreenPage>
+
+</mvc:View>

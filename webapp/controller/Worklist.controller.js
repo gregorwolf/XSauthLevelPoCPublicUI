@@ -131,6 +131,9 @@ sap.ui.define([
 				this._oTable.getBinding("items").refresh();
 			},
 
+			onVoucherCode: function(oEvent) {
+				this.getRouter().navTo("vouchercode");
+			},
 			/* =========================================================== */
 			/* internal methods                                            */
 			/* =========================================================== */
