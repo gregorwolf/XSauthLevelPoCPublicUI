@@ -2,6 +2,7 @@
 	controllerName="de.linuxdozent.gittest.publicui.controller.VoucherCode"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:p="com.penninkhof.controls"
 	xmlns:semantic="sap.m.semantic">
 
 	<semantic:FullscreenPage
@@ -12,15 +13,38 @@
 		busy="false">
 
 		<semantic:content>
-			<List
+			<Table
+				id="table"
+				width="auto"
+				class="sapUiResponsiveMargin"
 				items="{
 					path: '/DiscountCode'
-				}">
-				<StandardListItem
-					title="{UserName}"
-					counter="{DiscountValue}"
-					description="{SHA256HASH}" />
-			</List>
+				}"
+				noDataText="{worklistView>/tableNoDataText}"
+				headerText="{i18n>VoucherCodeHeaderText}"
+				busyIndicatorDelay="{worklistView>/tableBusyDelay}"
+				growing="true"
+				growingScrollToLoad="true"
+				updateFinished="onUpdateFinished">
+				<columns>
+					<Column id="QRCodeColumn">
+						<Text text="{i18n>tableQRCodeColumnTitle}" id="QRCodeColumnTitle"/>
+					</Column>
+					<Column id="DiscountValueColumn">
+						<Text text="{i18n>tableDiscountValueColumnTitle}" id="DiscountValueColumnTitle"/>
+					</Column>
+				</columns>
+
+				<items>
+					<ColumnListItem>
+						<cells>
+							<p:QRCode code="{SHA256HASH}" />
+							<ObjectIdentifier
+								title="{DiscountValue} EUR"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
  		</semantic:content>
 
 		<semantic:sendEmailAction>

@@ -30,6 +30,9 @@ sap.ui.define([
 
 				// create the views based on the url/hash
 				this.getRouter().initialize();
+				// Register custom controls 
+				var modulePath = jQuery.sap.getModulePath(this.getManifestObject().getComponentName());
+				jQuery.sap.registerModulePath("com.penninkhof.controls", modulePath + "/control");
 			},
 
 			/**
