@@ -78,6 +78,12 @@
 			</Table>
 		</semantic:content>
 
+		<semantic:positiveAction>
+			<semantic:PositiveAction text="{i18n>worklistRegisterAsCustomer}" press="onRegister" visible="{= ${Customer} === null ? true : false}"/>
+		</semantic:positiveAction>
+		<semantic:editAction>
+			<semantic:EditAction id="edit" press="onEdit" visible="{= ${Customer} === null ? false : true }"/>
+		</semantic:editAction>
 		<semantic:sendEmailAction>
 			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
 		</semantic:sendEmailAction>

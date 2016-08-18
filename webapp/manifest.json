@@ -75,6 +75,10 @@
 					"bundleName": "de.linuxdozent.gittest.publicui.i18n.i18n"
 				}
 			},
+			"currentUser": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "/services/userapi/currentUser"
+			},
 			"": {
 				"dataSource": "mainService",
 				"settings": {
@@ -119,6 +123,13 @@
 					"target": [
 						"vouchercode"
 					]
+				},
+				{
+					"pattern": "Customer",
+					"name": "register",
+					"target": [
+						"register"
+					]
 				}
 			],
 			"targets": {
@@ -136,6 +147,11 @@
 					"viewName": "Object",
 					"viewId": "object",
 					"viewLevel": 2
+				},
+				"register": {
+					"viewName": "CreateEntity",
+					"viewId": "createentity",
+					"viewLevel": 3
 				},
 				"objectNotFound": {
 					"viewName": "ObjectNotFound",

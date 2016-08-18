@@ -57,7 +57,32 @@ sap.ui.define([
 			/* =========================================================== */
 			/* event handlers                                              */
 			/* =========================================================== */
-
+			
+			/**
+			 * Event handler when the Register button has been clicked
+			 * @param {object} oEvent an event containing the total number of items in the list
+			 */
+			onRegister: function(oEvent){
+				this.getRouter().getTargets().display("register", {
+					mode: "create",
+					objectPath: "/Customer"
+				});
+			
+			},
+			
+			/**
+			 * Event handler in case of edit the participant registration.  
+			 * @param {object} oEvent contain the selected item
+			 * @public
+			 */
+			onEdit : function (oEvent) {
+				this.getModel("appView").setProperty("/addEnabled", false);
+				this.getRouter().getTargets().display("register", {
+					mode: "update",
+					objectPath: "/Customer"
+				});
+			},
+			
 			/**
 			 * Triggered by the table's 'updateFinished' event: after new table
 			 * data is available, this handler method updates the table counter.
