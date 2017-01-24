@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 						prefix: "de/linuxdozent/gittest/publicui" // namespace prefix (in case the namespace is not already in folder structure like sap/ui/core/**)
 					},
 					compress: true,
-					dest: "dist"
+					dest: "webapp"
 				},
 				components: true
 			}
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 
-	// grunt.registerTask("default", [ "openui5_preload"]);
+	grunt.registerTask("default", [ "openui5_preload"]);
 
 	grunt.registerTask("validate", [
 		"jshint",
