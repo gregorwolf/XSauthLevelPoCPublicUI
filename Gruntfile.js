@@ -73,7 +73,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks("grunt-openui5");
-	grunt.loadNpmTasks("grunt-connect-proxy");
 	grunt.loadNpmTasks("grunt-contrib-connect");
 	grunt.loadNpmTasks("grunt-xml-validator");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
