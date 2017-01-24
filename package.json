@@ -1,0 +1,20 @@
+{
+	"name": "XSauthLevelPoCPublicUI",
+	"version": "0.0.1",
+	"description": "Public SAPUI5 UI for the XS auth Level PoC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gregorwolf/XSauthLevelPoCPublicUI.git"
+	},
+	"author": "Gregor Wolf",
+	"license": "Apache License Version 2.0",
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-connect": "^1.0.2",
+		"grunt-openui5": "^0.9.0",
+		"grunt-contrib-jshint": "^0.11.1",
+		"grunt-contrib-watch": "^0.6.1",
+		"grunt-xml-validator": "^1.1.0",
+		"time-grunt": "^1.1.0"
+	}
+}
