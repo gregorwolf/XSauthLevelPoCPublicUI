@@ -7,7 +7,7 @@
 		"url": "https://github.com/gregorwolf/XSauthLevelPoCPublicUI.git"
 	},
 	"author": "Gregor Wolf",
-	"license": "Apache License Version 2.0",
+	"license": "Apache-2.0",
 	"devDependencies": {
 		"grunt": "~0.4.1",
 		"grunt-contrib-connect": "^1.0.2",
