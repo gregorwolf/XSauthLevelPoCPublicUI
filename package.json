@@ -9,12 +9,12 @@
 	"author": "Gregor Wolf",
 	"license": "Apache-2.0",
 	"devDependencies": {
-		"grunt": "~0.4.1",
+		"grunt": "^1.0.1",
 		"grunt-contrib-connect": "^1.0.2",
-		"grunt-openui5": "^0.9.0",
-		"grunt-contrib-jshint": "^0.11.1",
-		"grunt-contrib-watch": "^0.6.1",
-		"grunt-xml-validator": "^1.1.0",
-		"time-grunt": "^1.1.0"
+		"grunt-contrib-jshint": "^1.1.0",
+		"grunt-contrib-watch": "^1.0.0",
+		"grunt-openui5": "^0.11.0",
+		"grunt-xml-validator": "^1.1.3",
+		"time-grunt": "^1.4.0"
 	}
 }
