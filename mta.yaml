@@ -6,7 +6,7 @@ parameters:
   hcp-deployer-version: "1.0.0"
 
 modules:
-  - name: "XSauthLevelPoCPublicUI"
+  - name: "xsauthlevelpocpublicui"
     type: html5
     path: .
     parameters:
