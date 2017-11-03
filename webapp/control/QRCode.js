@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/Control",
 	"com/penninkhof/controls/3rdparty/qrcode"
-], function (Control) {
+], function (Control, QRCode) {
 	"use strict";
 
 	/**
